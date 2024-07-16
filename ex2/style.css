@@ -1,0 +1,60 @@
+@charset "UTF-8";   
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+    line-height: 1.5em;}
+
+header, section.normal{
+    padding: 20px;
+}
+
+p, h1, h2{
+    margin: 10px;
+    text-align: justify;
+}
+
+section.flex{
+    background-color: lightgray;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section > article{
+    border: 1px dashed green;
+}
+
+article.tex_med{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.med_tex{
+    display: flex;
+    flex-flow: row wrap-reverse; 
+    justify-content: space-between;
+}
+
+article > div.text{
+    flex: 1 1 400px
+}
+
+article > div.media{
+    flex: 1 0 300px
+}
+
+div.media > img{
+    display: block;
+    margin: auto;
+}
+
+div.media > iframe{
+    display: block;
+    margin: auto;
+}
